@@ -1,0 +1,59 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Интерактивное резюме</title>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="stylesheet" href="css/style.css"  type="text/css"/>
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		
+		<!--
+			width - ширина панели в пикселях (можно и в процентах);
+			height - высота панели в пикселях (или процентах);
+			align - расположение панели относительно текста, возможные значения left, right, center; 
+			hidden - позволяет скрыть панель, значения аттрибута: true - панель скрыта, false - панель видима (значение по умолчанию);
+			autostart - значение true - проигрыватель стартует автоматически, false - ждет нажатия на кнопку "воспроизведение";
+			loop - цикл, т.е. при значении true мелодия будет проигрываться по кругу, а при значении false - только один раз.
+		-->	
+		<div class="hello">
+			Привет,это я!<br>
+				Кратко обо мне ниже
+				<br>
+				<br>  
+				<img src="img/its_me.png" alt="" width="400">
+
+			<div class="Main_All_my">
+				<div class="demo_ame">
+					<input class="hide" id="hd-1" type="checkbox">
+					<label for="hd-1">About me</label>
+					<div class="content">
+						Чутка о себе! 
+					</div> 
+				</div>
+				<div class="demo_educ">	        
+					<input class="hide" id="hd-2" type="checkbox">
+					<label for="hd-2">Ученье свет!</label>
+					<div class="content">
+						Образование!
+					</div>
+				</div>
+				<div class="demo_jod">      
+					<input class="hide" id="hd-3" type="checkbox">
+					<label for="hd-3">***Работа и должности***</label>
+					<div class="content">
+						Теперь порядочку!
+					</div>
+				</div>	
+			</div>
+		</div>	
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>	
+	</body>
+</html>

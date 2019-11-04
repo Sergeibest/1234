@@ -1,0 +1,178 @@
+/*-----Обнуление стилей браузеров-----*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*-------------------------------------*/
+
+body{
+	background:url('../img/White-patte.jpg');
+	left: 50%;
+  	margin-left: -500px;
+  	position: absolute;
+  	width: 1000px;
+}
+
+span{
+	font-size: 25px;
+	color: #000000;
+}
+
+div{
+	font-size: 30px;
+	font-style: italic; 
+	color: #000000; 
+}
+
+.hello{
+	padding-top: 30px;
+	font-size: 30px;
+	font-style: italic;
+	text-align:center;
+}
+.Main_All_my{
+	margin:0 25% 0 25%;
+  	width:50%;
+	position: absolute;
+	padding-top: 30px;
+	font-size: 30px;
+	font-style: italic;
+	text-align:center;
+}
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+/* demo контейнер */
+.demo_ame, .demo_educ, .demo_jod {
+   max-width: 1024px;
+   padding: 0 20px;
+   margin: 10% 10%;
+   opacity:0.6;
+	border:2px solid red;
+	border-radius:50px;
+	background-color:#63abee;
+	padding:5px;
+	margin-top: 100px; 
+	color: #000000;
+	box-shadow: 3px 3px 7px #000000;
+	text-align:center;
+	transform: scale(1);
+	transition:0.3s all;
+}
+/* задает один и тот же ховер всем классам*/
+.demo_ame:hover, .demo_educ:hover, .demo_jod:hover { 
+	transform: scale(1.5, 1.5);
+	opacity:1;
+	border:4px solid red; 
+	background-color:white;
+	box-shadow: 3px 3px 7px 7px #f0d666;
+}
+
+.content{
+	max-width: 1024px;
+   padding: 0 20px;
+   margin: 10% 10%;
+   opacity:0.6;
+	border-radius:50px;
+	background-color:#63abee;
+	padding:5px;
+	margin-top: 100px; 
+	color: #000000;
+	box-shadow: 3px 3px 7px #000000;
+	text-align:center;
+	transform: scale(1);
+	transition:0.3s all;	
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display:  block;
+    background: white;
+    /* -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f; */
+    margin-top: 5px;
+	 margin-bottom: 5px; 	
+    padding: 10px;S
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+
+
+
+
